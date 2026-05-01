@@ -1,38 +1,30 @@
-name: "sep_no_titanium_req"
-type: "Separator"
-description: "acts like seperator but does not need titanium to build"
+name: "Copper Duplicator"
+description: "Don't worry about running out of copper"
+type: separator
+
+category: crafting
 hasLiquids: true
 hasItems: true
-health: 150
-itemCapacity: 30
-liquidCapacity: 50
-
-results: 
-[
-copper/2
-lead/2
-graphite/1
-titanium/1
-]
-
 hasPower: true
-size: 2
-spinnerSpeed: 7
-
-craftTime: 9
-updateEffect: "smeltsmoke"
-consumes: {
-	power: 1
-	liquid: slag/0.15
-	
-}
+health: 1050
+liquidCapacity: 20
+research: separator
 requirements: [
-	copper/30
-	silicon/30
+copper/1
 ]
-category: "crafting"
-research: "separator"
+size: 4
+consumes: {
+items: {
+    items: [
+      copper/1
+    ]
+  }
+power: 2
+}
+results: [
+copper/2
+]
+spinnerSpeed: 10
+craftTime: 0.025
 
-type: Separator
-size: 2
 
