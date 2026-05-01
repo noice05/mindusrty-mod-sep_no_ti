@@ -1,30 +1,36 @@
-name: "Copper Duplicator"
-description: "Don't worry about running out of copper"
-type: separator
-
-category: crafting
+name: "Op separator"
+type: "Separator"
+description: "free pyratite and plastinum :D"
 hasLiquids: true
 hasItems: true
-hasPower: true
-health: 1050
-liquidCapacity: 20
-research: separator
-requirements: [
-copper/1
-]
-size: 4
-consumes: {
-items: {
-    items: [
-      copper/1
-    ]
-  }
-power: 2
-}
-results: [
-copper/2
-]
-spinnerSpeed: 10
-craftTime: 0.025
+health: 5000
+itemCapacity: 100
+liquidCapacity: 50
 
+results: 
+[
+pyratite/5
+plastanium/5
+]
+
+hasPower: true
+size: 5
+spinnerSpeed: 5
+
+craftTime: 1
+updateEffect: "smeltsmoke"
+consumes: {
+	power: 1
+	liquid: cryofliud/0.1
+	
+}
+requirements: [
+	copper/1000
+	silicon/1000
+]
+category: "crafting"
+research: "separator"
+
+type: Separator
+size: 5
 
